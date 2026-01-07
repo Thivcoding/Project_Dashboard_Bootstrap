@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Home</title>
+
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- link js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- link icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body style="font-family: sans-serif;">
+    <!-- sidebar -->
+    <div class="vh-100 p-4 position-fixed top-0 position-relative" style="width: 20%;background-color: #2C2B7C;">
+        <!-- sidebar-header -->
+        <div class="d-flex gap-2 border-bottom border-secondary pb-2">
+            <!-- logo -->
+            <div class="p-1 bg-light rounded-3" style="width: 60px; height: 60px;">
+                <img 
+                    class="w-100 h-100"
+                    src="../assets/image/logo.webp" alt="logo">
+            </div>
+            <!-- title -->
+            <div class="mt-1">
+                <h6 class="text-light fw-bolder" >ETEC CENTER</h6>
+                <p class="fw-bold" style="color: rgb(163, 163, 163);">Build your IT</p>
+            </div>
+        </div>
+
+        <!-- Info Teacher -->
+        <div class="d-flex gap-2 border-bottom border-secondary py-4">
+            <!-- logo -->
+            <div class="p-1 bg-light rounded-circle overflow-hidden" style="width: 60px; height: 60px;">
+                <img 
+                    class="w-100 h-100"
+                    src="../assets/image/userLogo.png" alt="logo">
+            </div>
+            <!-- title -->
+            <div class="mt-1">
+                <h6 class="text-light fw-bolder" >Name: HOK VANTHIV</h6>
+                <h6 class="fw-bolder text-light">
+                    ID: <span class="text-info">99</span>
+                </h6>
+            </div>
+        </div>
+
+        <!-- menu and link page -->
+        <ul class="border-bottom border-secondary py-2 px-0">
+            <li class="nav-link d-flex gap-2  p-2 my-2 rounded-2">
+                <!-- កន្លែងដាក់ icon នៅទីនេះ -->
+                <i class="bi bi-house-door-fill text-light"></i>
+                <a href="" class="nav-link text-light fw-bold">Home</a>
+            </li>
+            <li class="nav-link d-flex gap-2 p-2 my-2 rounded-2">
+                <!-- កន្លែងដាក់ icon នៅទីនេះ -->
+                <i class="bi bi-person-square text-light"></i>
+                <a href="" class="nav-link text-light fw-bold">Instructor</a>
+            </li>
+            <li class="nav-link d-flex gap-2 p-2 my-2 rounded-2">
+                <!-- កន្លែងដាក់ icon នៅទីនេះ -->
+                <i class="bi bi-house-add-fill text-light"></i>
+                <a href="" class="nav-link text-light fw-bold">Class</a>
+            </li>
+            <li class="nav-link d-flex gap-2 p-2 my-2 rounded-2">
+                <!-- កន្លែងដាក់ icon នៅទីនេះ -->
+                <i class="bi bi-gear-fill text-light"></i>
+                <a href="" class="nav-link text-light fw-bold">Setting</a>
+            </li>
+            <li class="nav-link d-flex gap-2 p-2 my-2 rounded-2">
+                <!-- កន្លែងដាក់ icon នៅទីនេះ -->
+                <i class="bi bi-journal-code text-light"></i>
+                <a href="" class="nav-link text-light fw-bold">Report</a>
+            </li>
+        </ul>
+
+        <!-- button logout -->
+        <a href="../index.html" class="btn btn-danger position-absolute fw-bold"
+            style="left: 27px; bottom: 10px; width: 80%;">
+                <i class="bi bi-box-arrow-left me-2"></i>
+                Logout
+        </a>
+        
+    </div>
+
+    <!-- dashboard page -->
+    <div class="min-vh-100 bg-light p-4" style="width: 80%;margin-left: 20%; ">
+        <!-- title -->
+         <h3>Attendence System</h3>
+         <p class="text-secondary">Manage your class like manage your oun heart</p>
+   
+        <!-- information box -->
+        <div class="row border-bottom pb-3">
+            <!-- total class -->
+            <div class="col-3">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- title -->
+                        <div class="">
+                            <h6 class="fw-bold text-secondary">Total Class</h6>
+                            <h4 class="fw-bold">100</h4>
+                        </div>
+                        <!-- icon -->
+                        <i class="bi bi-easel2-fill fs-1 text-primary border-start px-3"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- total Student -->
+            <div class="col-3">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- title -->
+                        <div class="">
+                            <h6 class="fw-bold text-secondary">Total Student</h6>
+                            <h4 class="fw-bold">1000</h4>
+                        </div>
+                        <!-- icon -->
+                        <i class="bi bi-people-fill fs-1 text-success border-start px-3"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Male Student -->
+            <div class="col-3">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- title -->
+                        <div class="">
+                            <h6 class="fw-bold text-secondary">Male Student</h6>
+                            <h4 class="fw-bold">500</h4>
+                        </div>
+                        <!-- icon -->
+                        <i class="bi bi-gender-male fs-1 text-info border-start px-3"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Female Student -->
+            <div class="col-3">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- title -->
+                        <div class="">
+                            <h6 class="fw-bold text-secondary">Female Student</h6>
+                            <h4 class="fw-bold">500</h4>
+                        </div>
+                        <!-- icon -->
+                        <i class="bi bi-gender-female fs-1 text-danger border-start px-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- search and button add class -->
+        <div class="d-flex justify-content-between mt-3">
+            <!-- search -->
+            <div class="d-flex gap-2">
+                <div class="position-relative">
+                    <input type="text" class="form-control shadow-none" placeholder="Search Class...">
+                    <i class="bi bi-search position-absolute" style="right: 13px; top:7px;"></i>
+                </div>
+                <!--  -->
+                <button class="btn btn-secondary">Refresh</button>
+            </div>
+            <!-- add class -->
+            <button class="btn btn-primary">Add Class +</button>
+        </div>
+
+        <!-- class list -->
+        <div class="row mt-3">
+            <!-- class list 1 -->
+            <div class="col-4">
+                <div class="card p-3">
+                    <!-- card-header -->
+                        <!-- title class -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <!-- icon -->
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="bi bi-house-fill fs-2" style="color: #2C2B7C;"></i>
+                                <h5 class="fw-bold mt-2">Web Design + React.js</h5>
+                            </div>
+                            <i class="bi bi-three-dots-vertical fs-5"></i>
+                            <!-- icon -->
+                        </div>
+                        <!-- class id -->
+                        <div>
+                            <p>Class id: 
+                                <span style="background-color: #2C2B7C;color: white;padding: 2px 5px; border-radius: 6px;">999</span>
+                            </p>
+                        </div>
+                        <!-- class lesson -->
+                        <div class="d-flex gap-3">
+                            <h6 class="fw-bold mt-1">Class Lessons:</h6>
+                            <p style="background-color: rgb(194, 194, 194);color: black;padding: 1px 5px; border-radius: 6px;">Bootstrap</p>
+                        </div>
+                        <hr class="mt-0">   
+                    <!-- card-body -->
+
+                    <!-- card-footer -->
+                    <button class="btn btn-light border-1 border-secondary">View Class</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
